@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@100&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App h2{
+  font-size: 50px;
+}
+.body-content-cards{
+  max-height: 75vh;
+  overflow-x: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.body-content-cards::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.body-content-cards::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.body-content-cards::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.body-content-cards::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.body-content-cards::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+.body-content-cards::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.body-content-cards::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.body-content-cards::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+.body-content-cards::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.nav-container {  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 85px 40px;
+  grid-auto-columns: 300px;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column dense;
+  grid-template-areas:
+    "search-bar"
+    "pag-nav";
+}
+
+.search-bar {  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "search-term sort-by";
+  grid-area: search-bar;
+}
+
+.search-term { grid-area: search-term; }
+
+.sort-by { grid-area: sort-by; }
+
+.pag-nav {  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:40px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "prev-button page-of-pages next-button max-page-limit";
+  grid-area: pag-nav;
+}
+
+.prev-button { grid-area: prev-button; }
+
+.page-of-pages { grid-area: page-of-pages; }
+
+.next-button { grid-area: next-button; }
+
+.max-page-limit { grid-area: max-page-limit; }
+
+.nav-container{
+  background-color: rgb(177, 177, 177);
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+}

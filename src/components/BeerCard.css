@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@100&display=swap');
+
+.card-container {  
+    display: grid;
+    grid-template-columns: 400px 0px 650px;
+    grid-template-rows: 150px;
+    grid-auto-columns: 300px;
+    grid-auto-rows: 1px;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    margin: 2%;
+
+  }
+  
+  .full-card-beer { 
+      grid-area: 1 / 1 / 2 / 4; 
+    }
+  
+  .main-card { 
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 50px 50px 50px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name"
+      "category-country"
+      "abv-ibu";
+    grid-area: 1 / 1 / 2 / 2;
+
+  }
+  
+  .name { 
+      grid-area: name; }
+  
+  .category-country { 
+      grid-area: category-country; }
+  
+  .abv-ibu {  
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "abv ibu";
+    grid-area: abv-ibu;
+  }
+  
+  .abv { 
+      grid-area: abv;}
+
+  
+  .ibu { 
+      grid-area: ibu;
+    }
+  
+  .btn { 
+      grid-area: 1 / 2 / 2 / 3;}
+  
+  .more-info {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "description"
+      "location-info";
+    grid-area: 1 / 3 / 2 / 4;
+    padding: 10px;
+  }
+  
+  .description { 
+      grid-area: description;
+      overflow-y: auto;
+    }
+  
+  .location-info {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "city-state gps-coords website-link";
+    grid-area: location-info;;
+  }
+  
+  .city-state { 
+      grid-area: city-state; 
+    }
+  
+  .gps-coords { 
+      grid-area: gps-coords; 
+    }
+  
+  .website-link { 
+      grid-area: website-link; 
+}
+
+.main-card {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.full-card-beer{
+    
+    border-radius: 20px;
+    background: rgb(198,198,198);
+background: radial-gradient(circle, rgba(198,198,198,1) 0%, rgba(162,162,162,1) 100%);
+}
+.btn {
+    padding: 10px;
+}
+
+.full-card-beer:hover{
+    background: rgb(84,80,64);
+background: radial-gradient(circle, rgba(84,80,64,1) 0%, rgba(117,94,94,1) 100%);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 2px 2px 6px black;
+    text-shadow: ntwo;
+    
+}
+.card-beer-name{
+    font-family: 'Rum Raisin', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+
+}
+.card-beer-origin{
+
+    margin-bottom: 5px;
+    background-color: transparent;
+
+}
+.card-beer-description{
+    font-size: 15px;
+    margin-bottom: 20px;
+   background-color: transparent;
+}
+
+.card-beer-abv{
+
+}
+.card-beer-abv span{
+
+}
+.card-beer-ibu{
+
+}
+.card-beer-ibu span{
+
+}
+.card-button{
+ width: 100%;
+ height: 100%;
+}
+.card-button:hover{
+
+}
+
+.card-beer-show-more{
+
+}
+
+.card-beer-gpscoords a, .card-beer-website a{
+
+}
+.card-beer-gpscoords a, .card-beer-website a:link{
+
+}
+.card-beer-gpscoords a, .card-beer-website a:visited{
+
+}
+.card-beer-gpscoords a:hover, .card-beer-website a:hover{
+
+}
+
+.card-beer-adress{
+
+}
+.card-beer-gpscoords{
+
+}
+.card-beer-website{
+
+}
+
+.description::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  .description::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  .description::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  .description::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  .description::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  .description::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  .description::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  .description::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  .description::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  
